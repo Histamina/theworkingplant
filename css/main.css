@@ -1,0 +1,211 @@
+body {
+  max-width: 1360px;
+  margin: auto; }
+
+h1 {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: "Martel", serif;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 12px; }
+
+h2,
+h3 {
+  font-family: "Lora", sans-serif;
+  font-style: normal;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.3px; }
+
+h5 {
+  font-family: "Lora", sans-serif;
+  font-style: normal;
+  text-align: center; }
+
+.color-fondo {
+  background-color: #709744;
+  color: white;
+  font-size: 20px; }
+
+.color-crema {
+  background-color: rgba(255, 162, 30, 0.69);
+  font-size: 16px;
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 0.5px;
+  text-align: center; }
+
+.fondo-img {
+  background-image: url("https://i.imgur.com/NkerSFo.jpg");
+  width: 700px;
+  height: 450px; }
+
+.listaImg {
+  list-style-type: none;
+  list-style-position: inside; }
+
+.row:hover > *[class^="col"] {
+  outline: 1px dashed rgba(0, 0, 0, 0.15); }
+
+.row:hover > *[class^="col"]:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.3); }
+
+body > * + * {
+  margin-top: 1.75rem; }
+
+section + section {
+  margin-top: 4rem; }
+
+section + section#footer {
+  margin-top: 5rem; }
+
+body {
+  background-color: #fcfafa; }
+
+.bg-dark {
+  background-color: #303030 !important; }
+
+#primera-seccion .img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; }
+  #primera-seccion .img-wrapper img {
+    width: 100%; }
+  #primera-seccion .img-wrapper h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    font-size: 31px; }
+
+#primera-seccion .paragraph-wrapper {
+  background-color: rgba(255, 162, 30, 0.69); }
+  #primera-seccion .paragraph-wrapper p {
+    font-size: 17px;
+    font-family: "Ibarra Real Nova", serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-style: italic; }
+
+#video-seccion video {
+  border-radius: 3px;
+  box-shadow: 8px 8px 10px #888888; }
+
+#card-planta .title-wrapper h2 {
+  font-size: 2.2rem;
+  background-color: #ffffff;
+  color: #5b7a36;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.1); }
+
+#card-planta .title-wrapper h3 {
+  font-style: italic;
+  color: #646464; }
+
+#footer .title-wrapper {
+  padding-left: 1rem; }
+  #footer .title-wrapper h5 {
+    font-size: 0.8rem;
+    color: #FFFFFF; }
+
+#footer .icon-wrapper a i.mdi.mdi-instagram, #footer .icon-wrapper a i.mdi.mdi-gmail, #footer .icon-wrapper a i.mdi.mdi-twitter {
+  font-size: 2.3rem;
+  color: #e0e0e0; }
+
+#imagen-comprar .comprar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; }
+  #imagen-comprar .comprar-wrapper h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(124, 124, 124, 0.8);
+    color: #ffffff;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    font-size: 4rem;
+    margin-left: 18rem;
+    margin-right: 18rem; }
+
+#stock-title h2 {
+  font-size: 4rem;
+  transform: skew(-13deg); }
+
+#stock-suculentas h2, #stock-cactus h2, #stock-potus h2 {
+  color: #5b7a36;
+  text-decoration: underline; }
+
+#stock-suculentas h3, #stock-cactus h3, #stock-potus h3 {
+  color: #394d21; }
+
+#stock-suculentas .col-3, #stock-cactus .col-3, #stock-potus .col-3 {
+  overflow: hidden;
+  padding: 0rem; }
+  #stock-suculentas .col-3 img, #stock-cactus .col-3 img, #stock-potus .col-3 img {
+    transition: all 0.5s ease-in-out; }
+  #stock-suculentas .col-3 img:hover, #stock-cactus .col-3 img:hover, #stock-potus .col-3 img:hover {
+    transform: scale(1.3); }
+
+#imagen-informacion .info-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; }
+  #imagen-informacion .info-wrapper h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(105, 105, 105, 0.8);
+    color: #ffffff;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    font-size: 4rem;
+    margin: 0 19rem 0 19rem; }
+
+#cards .card-title {
+  font-size: 1.7rem;
+  color: #5b7a36; }
+
+#cards ul li {
+  list-style-type: none;
+  font-family: "Ibarra Real Nova", serif; }
+
+#trasplantar h2, #riego h2, #nutricion h2 {
+  font-size: 3rem;
+  color: #5b7a36; }
+
+#trasplantar .col-3 .lista-wrapper, #riego .col-3 .lista-wrapper, #nutricion .col-3 .lista-wrapper {
+  background-color: rgba(255, 162, 30, 0.69); }
+  #trasplantar .col-3 .lista-wrapper ul li, #riego .col-3 .lista-wrapper ul li, #nutricion .col-3 .lista-wrapper ul li {
+    list-style-type: none; }
+
+#contacto .contacto-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center; }
+  #contacto .contacto-wrapper h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 3.5rem;
+    background-color: rgba(121, 121, 121, 0.7);
+    color: #ffffff;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 25rem 0 25rem; }
+
+#formulario-aside .form-wrapper {
+  outline: 1px solid rgba(0, 0, 0, 0.3); }
+
+#error404 .error-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; }
+  #error404 .error-wrapper .titles.col-4 {
+    position: absolute;
+    left: 33%;
+    right: 20%;
+    background-color: rgba(161, 161, 161, 0.45); }
+    #error404 .error-wrapper .titles.col-4 h2, #error404 .error-wrapper .titles.col-4 h3 {
+      color: #FFFFFF; }
+    #error404 .error-wrapper .titles.col-4 a button {
+      font-family: "Martel", serif; }

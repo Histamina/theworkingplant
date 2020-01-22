@@ -1,0 +1,308 @@
+$color-ocre: rgba(255, 162, 30, 0.69);
+$color-degradado: linear-gradient(90deg, rgba(38, 38, 38, 1) 0%, rgba(64, 63, 63, 1) 50%, rgba(38, 38, 38, 1) 100%);
+$font-family-headers: 'Martel',
+serif;
+$font-family-titulos: 'Lora',
+sans-serif;
+$font-family-textos: 'Ibarra Real Nova',
+serif;
+$widthGenerico: 1300px;
+@mixin colors($bc-color, $color-text) {
+    background-color: $bc-color;
+    color: $color-text;
+}
+
+body {
+    max-width: 1360px;
+    margin: auto;
+}
+
+h1 {
+    @include colors(black, white);
+    font-size: 25px;
+    font-family: $font-family-headers;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 12px;
+}
+
+h2,
+h3 {
+    font-family: $font-family-titulos;
+    font-style: normal;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+h5 {
+    font-family: $font-family-titulos;
+    font-style: normal;
+    text-align: center;
+}
+
+.color-fondo {
+    @include colors(#709744, white);
+    font-size: 20px;
+}
+
+.color-crema {
+    background-color: $color-ocre;
+    font-size: 16px;
+    font-family: $font-family-textos;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.fondo-img {
+    background-image: url("https://i.imgur.com/NkerSFo.jpg");
+    width: 700px;
+    height: 450px;
+}
+
+.listaImg {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+
+.row:hover>*[class^="col"] {
+    outline: 1px dashed rgba(0, 0, 0, .15);
+}
+
+.row:hover > *[class^="col"]:hover {
+    outline: 1px solid rgba(0, 0, 0, .3);
+}
+
+body>*+* {
+    margin-top: 1.75rem;
+}
+
+section + section {
+    margin-top: 4rem;
+}
+
+section + section#footer {
+    margin-top: 5rem;
+}
+
+body {
+    background-color: rgb(252, 250, 250);
+}
+
+.bg-dark {
+    background-color: rgb(48, 48, 48) !important;
+}
+
+
+#primera-seccion {
+    .img-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        h2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            color: #FFFFFF;
+            text-shadow: 0px 1px rgba(0, 0, 0, .1);
+            font-size: 31px;
+        }
+    }
+    .paragraph-wrapper {
+        background-color: $color-ocre;
+        p {
+            font-size: 17px;
+            font-family: $font-family-textos;
+            letter-spacing: 0.5px;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+}
+
+#video-seccion {
+    video {
+        border-radius: 3px;
+        box-shadow: 8px 8px 10px #888888;
+    }
+}
+
+#card-planta {
+    .title-wrapper {
+        h2 {
+            font-size: 2.2rem;
+            @include colors(#ffffff,
+            #5b7a36);
+            text-shadow: 1px 3px rgba(0, 0, 0, .1);
+        }
+        h3 {
+            font-style: italic;
+            color: rgb(100, 100, 100);
+        }
+    }
+}
+
+#footer {
+    .title-wrapper {
+        padding-left: 1rem;
+        h5 {
+            font-size: 0.8rem;
+            color: #FFFFFF;
+        }
+    }
+    .icon-wrapper {
+        a {
+            & i.mdi.mdi-instagram, i.mdi.mdi-gmail, i.mdi.mdi-twitter {
+                font-size: 2.3rem;
+                color: rgb(224, 224, 224);
+            }
+        }
+    }
+}
+
+#imagen-comprar {
+    .comprar-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            @include colors(rgba(124, 124, 124, 0.8), #ffffff);
+            text-shadow: 0px 1px rgba(0, 0, 0, .1);
+            font-size: 4rem;
+            margin-left: 18rem;
+            margin-right: 18rem;
+        }
+    }
+}
+    
+
+
+#stock-title {
+    h2 {
+        font-size: 4rem;
+        transform: skew(-13deg);
+    }
+}
+
+#stock-suculentas, #stock-cactus, #stock-potus {
+    h2 {
+        color: #5b7a36;
+        text-decoration: underline;
+    }
+    h3 {
+        color: #394d21;
+    }
+    .col-3 {
+        overflow: hidden;
+        padding: 0rem;
+
+        img {
+            transition: all 0.5s ease-in-out;
+        }
+
+        img:hover {
+        transform: scale(1.3);
+        }
+    }
+}
+
+#imagen-informacion {
+    .info-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        h2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            @include colors(rgba(105, 105, 105, 0.8), #ffffff);
+            text-shadow: 0px 1px rgba(0, 0, 0, .1);
+            font-size: 4rem;
+            margin: 0 19rem 0 19rem;
+        }
+    }
+}
+
+#cards {
+    .card-title {
+            font-size: 1.7rem;
+            color: #5b7a36;
+    }
+    ul { 
+        li {
+            list-style-type: none;
+            font-family: $font-family-textos;
+        }
+    }
+}
+
+#trasplantar, #riego, #nutricion {
+    h2 {
+        font-size: 3rem;
+        color: #5b7a36;
+    }
+    .col-3 {
+        .lista-wrapper {
+            background-color: $color-ocre;
+            ul { 
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+#contacto {
+    .contacto-wrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+        h2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-size: 3.5rem;
+            @include colors (rgba(121, 121, 121, 0.7), #ffffff)
+            text-shadow: 0px 1px rgba(0, 0, 0, .1);
+            margin: 0 25rem 0 25rem;
+        }
+    }
+}
+
+#formulario-aside {
+    .form-wrapper {
+        outline: 1px solid rgba(0, 0, 0, .3);
+    }
+}
+
+
+#error404 {
+    .error-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .titles.col-4 {
+            position: absolute;
+            left: 33%;
+            right: 20%;
+            background-color: rgba(161, 161, 161, 0.45);
+            h2, h3 {
+                color: #FFFFFF;
+            }
+            a button {
+                font-family: $font-family-headers;
+            }
+        }
+    }
+}
