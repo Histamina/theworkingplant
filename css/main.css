@@ -1,6 +1,7 @@
 body {
   max-width: 1360px;
-  margin: auto; }
+  margin: auto;
+  background-color: #fcfafa; }
 
 h1 {
   background-color: black;
@@ -60,9 +61,6 @@ section + section {
 
 section + section#footer {
   margin-top: 5rem; }
-
-body {
-  background-color: #fcfafa; }
 
 .bg-dark {
   background-color: #303030 !important; }
