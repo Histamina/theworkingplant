@@ -38,12 +38,6 @@ h5 {
   letter-spacing: 0.5px;
   text-align: center; }
 
-.row:hover > *[class^="col"] {
-  outline: 1px dashed rgba(0, 0, 0, 0.15); }
-
-.row:hover > *[class^="col"]:hover {
-  outline: 1px solid rgba(0, 0, 0, 0.3); }
-
 body > * + * {
   margin-top: 1.75rem; }
 
@@ -54,7 +48,9 @@ section + section#footer {
   margin-top: 5rem; }
 
 #navbar a {
-  font-family: "Martel", serif;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   color: #b6b6b6; }
   #navbar a:hover {
     color: rgba(124, 124, 124, 0.8); }

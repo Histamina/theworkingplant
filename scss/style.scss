@@ -56,13 +56,13 @@ h5 {
     text-align: center;
 }
 
-.row:hover>*[class^="col"] {
-    outline: 1px dashed rgba(0, 0, 0, .15);
-}
+// .row:hover>*[class^="col"] {
+//     outline: 1px dashed rgba(0, 0, 0, .15);
+// }
 
-.row:hover > *[class^="col"]:hover {
-    outline: 1px solid rgba(0, 0, 0, .3);
-}
+// .row:hover > *[class^="col"]:hover {
+//     outline: 1px solid rgba(0, 0, 0, .3);
+// }
 
 body>*+* {
     margin-top: 1.75rem;
@@ -78,7 +78,9 @@ section + section#footer {
 
 #navbar {
     a {
-        font-family: $font-family-headers;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
         color: rgb(182, 182, 182);
         &:hover {
             color: rgba(124, 124, 124, 0.8);
