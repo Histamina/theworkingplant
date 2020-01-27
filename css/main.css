@@ -99,7 +99,8 @@ section + section#footer {
   padding-left: 1rem; }
   #footer .title-wrapper h5 {
     font-size: 0.8rem;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    letter-spacing: 1px; }
 
 #footer .icon-wrapper a i.mdi.mdi-instagram, #footer .icon-wrapper a i.mdi.mdi-gmail, #footer .icon-wrapper a i.mdi.mdi-twitter {
   font-size: 2.3rem;

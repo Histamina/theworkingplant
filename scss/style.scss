@@ -153,6 +153,7 @@ section + section#footer {
         h5 {
             font-size: 0.8rem;
             color: #FFFFFF;
+            letter-spacing: 1px;
         }
     }
     .icon-wrapper {
@@ -204,7 +205,7 @@ section + section#footer {
     .col-3 {
         overflow: hidden;
         padding: 0rem;
-        
+
         img {
             transition: all 0.5s ease-in-out;
         }
