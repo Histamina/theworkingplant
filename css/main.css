@@ -54,6 +54,8 @@ section + section#footer {
   color: #b6b6b6; }
   #navbar a:hover {
     color: rgba(124, 124, 124, 0.8); }
+  #navbar a.has-span {
+    background-color: #5c5c5c; }
 
 .bg-navbar-custom {
   background-color: #303030; }

@@ -85,8 +85,12 @@ section + section#footer {
         &:hover {
             color: rgba(124, 124, 124, 0.8);
         }
+        &.has-span {
+            background-color: rgb(92, 92, 92);
+        }
     }
 }
+
 
 @if 1+2==3 {
     .bg-navbar-custom {
