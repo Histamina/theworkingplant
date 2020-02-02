@@ -134,12 +134,12 @@ section + section#footer {
 #stock-suculentas h3, #stock-cactus h3, #stock-potus h3 {
   color: #394d21; }
 
-#stock-suculentas .col-3, #stock-cactus .col-3, #stock-potus .col-3 {
+#stock-suculentas .col-md-3, #stock-cactus .col-md-3, #stock-potus .col-md-3 {
   overflow: hidden;
   padding: 0rem; }
-  #stock-suculentas .col-3 img, #stock-cactus .col-3 img, #stock-potus .col-3 img {
+  #stock-suculentas .col-md-3 img, #stock-cactus .col-md-3 img, #stock-potus .col-md-3 img {
     transition: all 0.5s ease-in-out; }
-  #stock-suculentas .col-3 img:hover, #stock-cactus .col-3 img:hover, #stock-potus .col-3 img:hover {
+  #stock-suculentas .col-md-3 img:hover, #stock-cactus .col-md-3 img:hover, #stock-potus .col-md-3 img:hover {
     transform: scale(1.3); }
 
 #imagen-informacion .info-wrapper {
