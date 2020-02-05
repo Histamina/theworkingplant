@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 1360px;
   margin: auto;
@@ -135,14 +136,15 @@ section + section#footer {
   text-decoration: underline; }
 
 #stock-suculentas h3, #stock-cactus h3, #stock-potus h3 {
-  color: #394d21; }
+  color: #394d21;
+  width: 3rem; }
 
-#stock-suculentas .col-md-3, #stock-cactus .col-md-3, #stock-potus .col-md-3 {
+#stock-suculentas .col-lg-3, #stock-suculentas .col-md-3, #stock-cactus .col-lg-3, #stock-cactus .col-md-3, #stock-potus .col-lg-3, #stock-potus .col-md-3 {
   overflow: hidden;
   padding: 0rem; }
-  #stock-suculentas .col-md-3 img, #stock-cactus .col-md-3 img, #stock-potus .col-md-3 img {
+  #stock-suculentas .col-lg-3 img, #stock-suculentas .col-md-3 img, #stock-cactus .col-lg-3 img, #stock-cactus .col-md-3 img, #stock-potus .col-lg-3 img, #stock-potus .col-md-3 img {
     transition: all 0.5s ease-in-out; }
-  #stock-suculentas .col-md-3 img:hover, #stock-cactus .col-md-3 img:hover, #stock-potus .col-md-3 img:hover {
+  #stock-suculentas .col-lg-3 img:hover, #stock-suculentas .col-md-3 img:hover, #stock-cactus .col-lg-3 img:hover, #stock-cactus .col-md-3 img:hover, #stock-potus .col-lg-3 img:hover, #stock-potus .col-md-3 img:hover {
     transform: scale(1.3); }
 
 #imagen-informacion .info-wrapper {
@@ -206,3 +208,76 @@ section + section#footer {
       color: #FFFFFF; }
     #error404 .error-wrapper .titles.col-4 a button {
       font-family: "Martel", serif; }
+
+/* Imágenes mobile responsive < 769px y xs sección COMPRAR */
+@media (max-width: 769px) {
+  #imagen-comprar .comprar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    #imagen-comprar .comprar-wrapper h2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: rgba(124, 124, 124, 0.8);
+      color: #ffffff;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+      font-size: 1.7rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; }
+  #stock-title {
+    margin-top: 1.2rem; }
+    #stock-title h2 {
+      font-size: 3.5rem;
+      transform: skew(-13deg); }
+  #stock-suculentas h2, #stock-cactus h2, #stock-potus h2 {
+    color: #5b7a36;
+    text-decoration: underline;
+    font-size: 2rem; }
+  #stock-suculentas h3, #stock-cactus h3, #stock-potus h3 {
+    width: 3rem;
+    font-size: 1.5rem; } }
+
+/* Cambio img-size hasta 576px */
+@media (max-width: 576px) {
+  #stock-suculentas div.shadow, #stock-cactus div.shadow, #stock-potus div.shadow {
+    display: flex;
+    flex-direction: column; }
+    #stock-suculentas div.shadow img, #stock-cactus div.shadow img, #stock-potus div.shadow img {
+      width: 270px;
+      height: 270px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      box-shadow: 8px 8px 10px #888888; } }
+
+/* Imágenes mobile responsive < 769px sección INFORMACIÓN */
+@media (max-width: 769px) {
+  #imagen-informacion .info-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    #imagen-informacion .info-wrapper h2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: rgba(105, 105, 105, 0.8);
+      color: #ffffff;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+      font-size: 1.7rem;
+      margin: 0 1.5rem 0 1.5rem; } }
+
+/* Imágenes mobile responsive < 769px  sección CONTACTO */
+@media (max-width: 769px) {
+  #contacto .contacto-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center; }
+    #contacto .contacto-wrapper h2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      font-size: 2rem;
+      background-color: rgba(121, 121, 121, 0.7);
+      color: #ffffff;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+      margin: 0 1rem 0 1rem; } }

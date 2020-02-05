@@ -208,8 +208,9 @@ section + section#footer {
     }
     h3 {
         color: #394d21;
+        width: 3rem;
     }
-    .col-md-3 {
+    .col-lg-3, .col-md-3 {
         overflow: hidden;
         padding: 0rem;
 
@@ -310,6 +311,107 @@ section + section#footer {
             }
             a button {
                 font-family: $font-family-headers;
+            }
+        }
+    }
+}
+
+/* Imágenes mobile responsive < 769px y xs sección COMPRAR */
+
+@media (max-width: 769px) {
+    #imagen-comprar {
+        .comprar-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+    
+            h2 {
+                position: absolute;
+                left: 0;
+                right: 0;
+                @include colors(rgba(124, 124, 124, 0.8), #ffffff);
+                text-shadow: 0px 1px rgba(0, 0, 0, .1);
+                font-size: 1.7rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    #stock-title {
+        margin-top: 1.2rem;
+        h2 {
+            font-size: 3.5rem;
+            transform: skew(-13deg);
+        }
+    }
+    #stock-suculentas, #stock-cactus, #stock-potus {
+        h2 {
+            color: #5b7a36;
+            text-decoration: underline;
+            font-size: 2rem;
+        }
+        h3 {
+            width: 3rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* Cambio img-size hasta 576px */
+@media (max-width: 576px) {
+    #stock-suculentas, #stock-cactus, #stock-potus {
+        div.shadow {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 270px;
+                height: 270px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                box-shadow:  8px 8px 10px #888888;
+            }
+        }
+    }
+}
+
+
+/* Imágenes mobile responsive < 769px sección INFORMACIÓN */
+
+@media (max-width: 769px) {
+    #imagen-informacion {
+        .info-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            h2 {
+                position: absolute;
+                left: 0;
+                right: 0;
+                @include colors(rgba(105, 105, 105, 0.8), #ffffff);
+                text-shadow: 0px 1px rgba(0, 0, 0, .1);
+                font-size: 1.7rem;
+                margin: 0 1.5rem 0 1.5rem;
+            }
+        }
+    }
+}
+
+/* Imágenes mobile responsive < 769px  sección CONTACTO */
+
+@media (max-width: 769px) {
+    #contacto {
+        .contacto-wrapper {
+            display: flex;
+            position: relative;
+            align-items: center;
+            h2 {
+                position: absolute;
+                left: 0;
+                right: 0;
+                font-size: 2rem;
+                @include colors (rgba(121, 121, 121, 0.7), #ffffff)
+                text-shadow: 0px 1px rgba(0, 0, 0, .1);
+                margin: 0 1rem 0 1rem;
             }
         }
     }
