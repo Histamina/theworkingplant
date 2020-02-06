@@ -209,6 +209,17 @@ section + section#footer {
     #error404 .error-wrapper .titles.col-4 a button {
       font-family: "Martel", serif; }
 
+/* Video responsive <769px y <xs sección HOME */
+@media (max-width: 769px) {
+  #video-seccion video {
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 8px 8px 10px #888888; } }
+
+@media (max-width: 576px) {
+  #video-seccion h3 {
+    margin-top: 1.4rem; } }
+
 /* Imágenes mobile responsive < 769px y xs sección COMPRAR */
 @media (max-width: 769px) {
   #imagen-comprar .comprar-wrapper {
@@ -240,15 +251,21 @@ section + section#footer {
 
 /* Cambio img-size hasta 576px */
 @media (max-width: 576px) {
-  #stock-suculentas div.shadow, #stock-cactus div.shadow, #stock-potus div.shadow {
+  #stock-suculentas .suculenta-wrapper, #stock-suculentas .cactus-wrapper, #stock-suculentas .potus-wrapper, #stock-cactus .suculenta-wrapper, #stock-cactus .cactus-wrapper, #stock-cactus .potus-wrapper, #stock-potus .suculenta-wrapper, #stock-potus .cactus-wrapper, #stock-potus .potus-wrapper {
     display: flex;
-    flex-direction: column; }
-    #stock-suculentas div.shadow img, #stock-cactus div.shadow img, #stock-potus div.shadow img {
+    flex-direction: column;
+    justify-content: center; }
+    #stock-suculentas .suculenta-wrapper img, #stock-suculentas .cactus-wrapper img, #stock-suculentas .potus-wrapper img, #stock-cactus .suculenta-wrapper img, #stock-cactus .cactus-wrapper img, #stock-cactus .potus-wrapper img, #stock-potus .suculenta-wrapper img, #stock-potus .cactus-wrapper img, #stock-potus .potus-wrapper img {
+      display: flex;
       width: 270px;
       height: 270px;
       margin-bottom: 10px;
       margin-top: 10px;
-      box-shadow: 8px 8px 10px #888888; } }
+      box-shadow: 8px 8px 10px #a0a0a0; } }
+
+@media (min-width: 577px) {
+  #stock-suculentas .suculenta-wrapper div, #stock-suculentas .cactus-wrapper div, #stock-suculentas .potus-wrapper div, #stock-cactus .suculenta-wrapper div, #stock-cactus .cactus-wrapper div, #stock-cactus .potus-wrapper div, #stock-potus .suculenta-wrapper div, #stock-potus .cactus-wrapper div, #stock-potus .potus-wrapper div {
+    box-shadow: 8px 8px 10px #adadad; } }
 
 /* Imágenes mobile responsive < 769px sección INFORMACIÓN */
 @media (max-width: 769px) {
@@ -281,3 +298,8 @@ section + section#footer {
       color: #ffffff;
       text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
       margin: 0 1rem 0 1rem; } }
+
+/* Cambios responsive <xs en FOOTER*/
+@media (max-width: 576px) {
+  #footer .title-wrapper h5 {
+    font-size: 0.6rem; } }
