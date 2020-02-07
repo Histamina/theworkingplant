@@ -178,16 +178,14 @@ section + section#footer {
         position: relative;
         display: flex;
         align-items: center;
-
+        justify-content: center;
         h2 {
             position: absolute;
-            left: 0;
-            right: 0;
+            margin: auto;
+            padding: 0 3rem;
             @include colors(rgba(124, 124, 124, 0.8), #ffffff);
             text-shadow: 0px 1px rgba(0, 0, 0, .1);
             font-size: 4rem;
-            margin-left: 21rem;
-            margin-right: 21rem;
         }
     }
 }
@@ -210,13 +208,15 @@ section + section#footer {
         color: #394d21;
         width: 3rem;
     }
-    .col-lg-3, .col-md-3 {
+    .img-wrapper-plant {
         overflow: hidden;
         padding: 0rem;
-
+        box-shadow:  8px 8px 10px #888888;
+        display: inline-block;
+        margin: auto;
         img {
+            width: 100%;
             transition: all 0.5s ease-in-out;
-            box-shadow:  8px 8px 10px #888888;
             &:hover {
                 transform: scale(1.3);
             }
@@ -229,14 +229,14 @@ section + section#footer {
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
         h2 {
             position: absolute;
-            left: 0;
-            right: 0;
+            padding: 0 1.5rem;
+            margin: auto;
             @include colors(rgba(105, 105, 105, 0.8), #ffffff);
             text-shadow: 0px 1px rgba(0, 0, 0, .1);
             font-size: 4rem;
-            margin: 0 21rem 0 21rem;
         }
     }
 }
@@ -276,20 +276,20 @@ section + section#footer {
         display: flex;
         position: relative;
         align-items: center;
+        justify-content: center;
         h2 {
             position: absolute;
-            left: 0;
-            right: 0;
-            font-size: 3.5rem;
-            @include colors (rgba(121, 121, 121, 0.7), #ffffff)
+            margin: auto;
+            padding: 0 1.5rem;
+            font-size: 3.8rem;
+            @include colors (rgba(121, 121, 121, 0.7), #ffffff);
             text-shadow: 0px 1px rgba(0, 0, 0, .1);
-            margin: 0 28rem 0 28rem;
         }
     }
 }
 
 #formulario-aside {
-    .form-wrapper {
+    form {
         outline: 1px solid rgba(0, 0, 0, .3);
     }
 }
@@ -337,24 +337,26 @@ section + section#footer {
     }
 }
 
+@media (max-width: 786px) and (min-width: 576px) {
+    .img-wrapper {
+        align-items: flex-start;
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 1.7rem;
+            width: 93%;
+        }
+    }
+}
+
 /* Imágenes mobile responsive < 769px y xs sección COMPRAR */
 
-@media (max-width: 769px) {
+@media (max-width: 576px) {
     #imagen-comprar {
         .comprar-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
-    
             h2 {
-                position: absolute;
-                left: 0;
-                right: 0;
-                @include colors(rgba(124, 124, 124, 0.8), #ffffff);
-                text-shadow: 0px 1px rgba(0, 0, 0, .1);
-                font-size: 1.7rem;
-                margin-left: 1.5rem;
-                margin-right: 1.5rem;
+                font-size: 1.8rem;
+                padding: 0 0.9rem;
             }
         }
     }
@@ -378,40 +380,15 @@ section + section#footer {
     }
 }
 
-/* Cambio img-size hasta 576px */
-@media (max-width: 576px) {
-    #stock-suculentas, #stock-cactus, #stock-potus {
-        .suculenta-wrapper, .cactus-wrapper, .potus-wrapper {
-            img {
-                display: block;
-                width: 270px;
-                height: 270px;
-                margin-bottom: 10px;
-                margin-top: 10px;
-            }
-        }
-    }
-}
-
-
-
 
 /* Imágenes mobile responsive < 769px sección INFORMACIÓN */
 
-@media (max-width: 769px) {
+@media (max-width: 576px) {
     #imagen-informacion {
         .info-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
             h2 {
-                position: absolute;
-                left: 0;
-                right: 0;
-                @include colors(rgba(105, 105, 105, 0.8), #ffffff);
-                text-shadow: 0px 1px rgba(0, 0, 0, .1);
                 font-size: 1.7rem;
-                margin: 0 1.5rem 0 1.5rem;
+                padding: 0 0.8;
             }
         }
     }
@@ -419,20 +396,12 @@ section + section#footer {
 
 /* Imágenes mobile responsive < 769px  sección CONTACTO */
 
-@media (max-width: 769px) {
+@media (max-width: 576px) {
     #contacto {
         .contacto-wrapper {
-            display: flex;
-            position: relative;
-            align-items: center;
             h2 {
-                position: absolute;
-                left: 0;
-                right: 0;
-                font-size: 2rem;
-                @include colors (rgba(121, 121, 121, 0.7), #ffffff)
-                text-shadow: 0px 1px rgba(0, 0, 0, .1);
-                margin: 0 1rem 0 1rem;
+                font-size: 2.3rem;
+                padding: 0 1rem;
             }
         }
     }
