@@ -143,9 +143,10 @@ section + section#footer {
   overflow: hidden;
   padding: 0rem; }
   #stock-suculentas .col-lg-3 img, #stock-suculentas .col-md-3 img, #stock-cactus .col-lg-3 img, #stock-cactus .col-md-3 img, #stock-potus .col-lg-3 img, #stock-potus .col-md-3 img {
-    transition: all 0.5s ease-in-out; }
-  #stock-suculentas .col-lg-3 img:hover, #stock-suculentas .col-md-3 img:hover, #stock-cactus .col-lg-3 img:hover, #stock-cactus .col-md-3 img:hover, #stock-potus .col-lg-3 img:hover, #stock-potus .col-md-3 img:hover {
-    transform: scale(1.3); }
+    transition: all 0.5s ease-in-out;
+    box-shadow: 8px 8px 10px #888888; }
+    #stock-suculentas .col-lg-3 img:hover, #stock-suculentas .col-md-3 img:hover, #stock-cactus .col-lg-3 img:hover, #stock-cactus .col-md-3 img:hover, #stock-potus .col-lg-3 img:hover, #stock-potus .col-md-3 img:hover {
+      transform: scale(1.3); }
 
 #imagen-informacion .info-wrapper {
   position: relative;
@@ -209,13 +210,12 @@ section + section#footer {
     #error404 .error-wrapper .titles.col-4 a button {
       font-family: "Martel", serif; }
 
-/* Video responsive <769px y <xs sección HOME */
-@media (max-width: 769px) {
-  #video-seccion video {
-    width: 300px;
-    border-radius: 3px;
-    box-shadow: 8px 8px 10px #888888; } }
+/* responsive <576px Sección NAVBAR TITLE */
+@media (max-width: 576px) {
+  #navbar .nav-title {
+    width: 100%; } }
 
+/* Video responsive <769px y <xs sección HOME */
 @media (max-width: 576px) {
   #video-seccion h3 {
     margin-top: 1.4rem; } }
@@ -239,7 +239,7 @@ section + section#footer {
   #stock-title {
     margin-top: 1.2rem; }
     #stock-title h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       transform: skew(-13deg); }
   #stock-suculentas h2, #stock-cactus h2, #stock-potus h2 {
     color: #5b7a36;
@@ -251,21 +251,12 @@ section + section#footer {
 
 /* Cambio img-size hasta 576px */
 @media (max-width: 576px) {
-  #stock-suculentas .suculenta-wrapper, #stock-suculentas .cactus-wrapper, #stock-suculentas .potus-wrapper, #stock-cactus .suculenta-wrapper, #stock-cactus .cactus-wrapper, #stock-cactus .potus-wrapper, #stock-potus .suculenta-wrapper, #stock-potus .cactus-wrapper, #stock-potus .potus-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #stock-suculentas .suculenta-wrapper img, #stock-suculentas .cactus-wrapper img, #stock-suculentas .potus-wrapper img, #stock-cactus .suculenta-wrapper img, #stock-cactus .cactus-wrapper img, #stock-cactus .potus-wrapper img, #stock-potus .suculenta-wrapper img, #stock-potus .cactus-wrapper img, #stock-potus .potus-wrapper img {
-      display: flex;
-      width: 270px;
-      height: 270px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      box-shadow: 8px 8px 10px #a0a0a0; } }
-
-@media (min-width: 577px) {
-  #stock-suculentas .suculenta-wrapper div, #stock-suculentas .cactus-wrapper div, #stock-suculentas .potus-wrapper div, #stock-cactus .suculenta-wrapper div, #stock-cactus .cactus-wrapper div, #stock-cactus .potus-wrapper div, #stock-potus .suculenta-wrapper div, #stock-potus .cactus-wrapper div, #stock-potus .potus-wrapper div {
-    box-shadow: 8px 8px 10px #adadad; } }
+  #stock-suculentas .suculenta-wrapper img, #stock-suculentas .cactus-wrapper img, #stock-suculentas .potus-wrapper img, #stock-cactus .suculenta-wrapper img, #stock-cactus .cactus-wrapper img, #stock-cactus .potus-wrapper img, #stock-potus .suculenta-wrapper img, #stock-potus .cactus-wrapper img, #stock-potus .potus-wrapper img {
+    display: block;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 10px;
+    margin-top: 10px; } }
 
 /* Imágenes mobile responsive < 769px sección INFORMACIÓN */
 @media (max-width: 769px) {
