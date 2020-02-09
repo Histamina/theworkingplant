@@ -296,22 +296,17 @@ section + section#footer {
 
 
 #error404 {
-    .error-wrapper {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        .titles.col-4 {
-            position: absolute;
-            left: 33%;
-            right: 20%;
-            background-color: rgba(161, 161, 161, 0.45);
-            h2, h3 {
-                color: #FFFFFF;
-            }
-            a button {
-                font-family: $font-family-headers;
-            }
+    .titles {
+        width: 35%;
+        margin: 18% auto;
+        background-color: rgba(161, 161, 161, 0.45);
+        h2, h3 {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+        }
+        a button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
         }
     }
 }
@@ -327,6 +322,15 @@ section + section#footer {
     }
 }
 
+/*  Responsive ancors del menú hamburguesa */
+@media (max-width: 769px) {
+    #navbar {
+        a {
+            text-align: center;
+        }
+    }
+}
+
 /* Video responsive <769px y <xs sección HOME */
 
 @media (max-width: 576px) {
@@ -338,13 +342,15 @@ section + section#footer {
 }
 
 @media (max-width: 786px) and (min-width: 576px) {
-    .img-wrapper {
-        align-items: flex-start;
-        img {
-            display: block;
-            margin: auto;
-            margin-top: 1.7rem;
-            width: 93%;
+    #card-planta {
+        .img-wrapper {
+            align-items: flex-start;
+            img {
+                display: block;
+                margin: auto;
+                margin-top: 1.7rem;
+                width: 93%;
+            }
         }
     }
 }
@@ -417,4 +423,24 @@ section + section#footer {
             }
         }
     }
+}
+
+/* Cambios responsive <576px sección ERROR404 */
+
+@media (max-width: 576px) {
+    #error404 {
+        .titles {
+            width: 95%;
+            margin: 50% auto;
+            h1 {
+                font-size: 2rem;
+            }
+            h2, h3 {
+                font-size: 1.2rem;
+            }
+            a button {
+                font-size: 1.1rem;
+            }
+        }
+}
 }

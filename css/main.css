@@ -198,24 +198,26 @@ section + section#footer {
 #formulario-aside form {
   outline: 1px solid rgba(0, 0, 0, 0.3); }
 
-#error404 .error-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center; }
-  #error404 .error-wrapper .titles.col-4 {
-    position: absolute;
-    left: 33%;
-    right: 20%;
-    background-color: rgba(161, 161, 161, 0.45); }
-    #error404 .error-wrapper .titles.col-4 h2, #error404 .error-wrapper .titles.col-4 h3 {
-      color: #FFFFFF; }
-    #error404 .error-wrapper .titles.col-4 a button {
-      font-family: "Martel", serif; }
+#error404 .titles {
+  width: 35%;
+  margin: 18% auto;
+  background-color: rgba(161, 161, 161, 0.45); }
+  #error404 .titles h2, #error404 .titles h3 {
+    color: #FFFFFF;
+    font-size: 1.5rem; }
+  #error404 .titles a button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; }
 
 /* responsive <576px Sección NAVBAR TITLE */
 @media (max-width: 576px) {
   #navbar .nav-title {
     width: 100%; } }
+
+/*  Responsive ancors del menú hamburguesa */
+@media (max-width: 769px) {
+  #navbar a {
+    text-align: center; } }
 
 /* Video responsive <769px y <xs sección HOME */
 @media (max-width: 576px) {
@@ -223,9 +225,9 @@ section + section#footer {
     margin-top: 1.4rem; } }
 
 @media (max-width: 786px) and (min-width: 576px) {
-  .img-wrapper {
+  #card-planta .img-wrapper {
     align-items: flex-start; }
-    .img-wrapper img {
+    #card-planta .img-wrapper img {
       display: block;
       margin: auto;
       margin-top: 1.7rem;
@@ -265,3 +267,15 @@ section + section#footer {
 @media (max-width: 576px) {
   #footer .title-wrapper h5 {
     font-size: 0.6rem; } }
+
+/* Cambios responsive <576px sección ERROR404 */
+@media (max-width: 576px) {
+  #error404 .titles {
+    width: 95%;
+    margin: 50% auto; }
+    #error404 .titles h1 {
+      font-size: 2rem; }
+    #error404 .titles h2, #error404 .titles h3 {
+      font-size: 1.2rem; }
+    #error404 .titles a button {
+      font-size: 1.1rem; } }
